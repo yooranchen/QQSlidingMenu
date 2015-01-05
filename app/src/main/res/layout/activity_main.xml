@@ -1,0 +1,33 @@
+<org.yooran.demo.view.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yooran="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_frame_background"
+    android:id="@+id/slidingMenu">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:background="@drawable/qq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:onClick="toggleMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜单" />
+        </LinearLayout>
+    </LinearLayout>
+</org.yooran.demo.view.SlidingMenu>
